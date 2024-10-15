@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    margin-bottom: 50px;
+    border-radius: 50px !important;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
+
+#cesta-carrito {
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px 20px;
+}
+
+#producto-contenedor {
+    display: grid;
+    gap: 1rem;
+    max-width: 60rem;
+    margin: 60px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+p {
+    line-height: 2.0;
+}
+
+.card {
+    max-width: 30%;
+    padding: 2px;
+    border-radius: 15px;
+    box-shadow: rgb(69, 3, 3) 0px 5px 15px 0px;
+}
+
+.modal-contenedor {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+    opacity: 0;
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 5;
+}
+
+.modal-carrito {
+    position: relative;
+    background-color: white;
+    min-width: 500px;
+    padding: 20px;
+    margin-top: -100%;
+    transition: all .5s;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.modal-active .modal-carrito {
+    margin-top: 0;
+}
+
+.modal-carrito h3 {
+    color: rgb(74, 4, 4);
+    padding-bottom: 5px;
+}
+
+.modal-carrito #btn-cerrar-carrito {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    color: rgb(0, 0, 0) !important;
+    border: none;
+    background-color: white;
+}
+
+.modal-carrito #btn-cerrar-carrito:hover {
+    cursor: pointer;
+}
+
+.modal-carrito #btn-cerrar-carrito:focus {
+    outline: none;
+}
+
+.modal-carrito #btn-finalizar-compra {
+    font-size: 20px;
+    margin-left: 350px;
+    color: rgb(73, 12, 7);
+    border: none;
+}
+
+.modal-carrito .producto-precio {
+    padding-top: 10px;
+}
+
+.card .card-image .card-title {
+    color: rgb(73, 12, 7);
+    position: unset
+}
+
+.productoEnCarrito {
+    border-left: 5px solid rgb(73, 12, 7);
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    margin: 5px 0;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.boton-eliminar {
+    background-color: white;
+    color: #000000;
+    border: none;
+    font-size: 20px;
+}
+
+.boton-eliminar:focus {
+    outline: none;
+}
